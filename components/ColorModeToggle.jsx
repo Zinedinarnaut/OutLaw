@@ -10,7 +10,7 @@ const ColorModeToggle = () => {
       onClick={() => setTheme(colorTheme === "dark" ? "dark" : "dark")}
       className="cursor-pointer  dark:ring-white dark:bg-[#444444] hover:ring-[2px] transition-all ring-black p-2 bg-gray-300 rounded-lg"
     >
-      {colorTheme === "light" ? (
+      {colorTheme === "dark" ? (
         <span>
           <BiSun className="" size="20px" />
         </span>
