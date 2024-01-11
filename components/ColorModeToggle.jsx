@@ -7,7 +7,7 @@ const ColorModeToggle = () => {
   return (
     <button
       aria-label="toggle colormode"
-      onClick={() => setTheme(colorTheme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(colorTheme === "dark" ? "dark" : "dark")}
       className="cursor-pointer  dark:ring-white dark:bg-[#444444] hover:ring-[2px] transition-all ring-black p-2 bg-gray-300 rounded-lg"
     >
       {colorTheme === "light" ? (
