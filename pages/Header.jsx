@@ -47,9 +47,9 @@ const Header = () => {
                 className="w-auto rounded-full"
             />
           </div>
-      {/*    <div className="items-center">
+          <div className="items-center">
             <ColorModeToggle />
-          </div>*/}
+          </div>
           <div className="">
             <NavlinkDropMenu />
           </div>
