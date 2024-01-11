@@ -1,4 +1,4 @@
-import { redis } from "./redis";
+import { redis } from "./Redis";
 
 export async function getValuesWithPrefix(prefix) {
     let cursor = "0"; // Start at the beginning of the keyspace

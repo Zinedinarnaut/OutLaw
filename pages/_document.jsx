@@ -4,7 +4,7 @@ import Script from "next/script";
 export default function Document() {
   const headdata = [
     {
-      url: "https://araxyso.xyz",
+      url: "https://out-law.vercel.app",
       title: "OutLaw",
     },
   ];
@@ -21,9 +21,9 @@ export default function Document() {
         ></link>
         <link
           rel="shortcut icon"
-          href="/araxyso2.png"
+          href="/valorant.png"
         />
-        <meta name="author" content="Araxyso" />
+        <meta name="author" content="OutLaw" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={headdata.url} />
         <meta property="og:title" content={headdata.title} />

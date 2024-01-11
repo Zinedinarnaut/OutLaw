@@ -20,6 +20,25 @@ import { toast, Toaster } from "sonner";
 import {useEffect} from "react";
 
 function MyApp({ Component, pageProps, session }) {
+    const displayToastMessage = () => {
+                toast.message(
+                    `🚧Please be informed that our website is currently undergoing daily updates to enhance your experience. During this period, you may encounter occasional bugs or temporary disruptions. We appreciate your patience and understanding as we work to bring you an improved platform.🚧`,
+                    {
+                        position: "bottom-right",
+                        important: true,
+                        duration: 100000,
+                        className: "flex-center font-karla text-white",
+                    }
+                );
+    };
+
+    // Set an interval to display the toast message every, for example, 10 minutes
+    useEffect(() => {
+        const intervalId = setInterval(displayToastMessage, 60 * 60 * 1000);
+
+        // Clear the interval when the component is unmounted
+        return () => clearInterval(intervalId);
+    }, []);
     return (
         <main className="">
             <NextNProgress
@@ -49,7 +68,7 @@ function MyApp({ Component, pageProps, session }) {
                         <SessionProvider session={session}>
                             <SkeletonTheme baseColor="#232329" highlightColor="#2a2a32">
                                 <Script
-                                    src="https://araxyso.xyz/theme.js"
+                                    src="https://out-law.vercel.app/theme.js"
                                     strategy="beforeInteractive"
                                 />
                                 <Component {...pageProps} />

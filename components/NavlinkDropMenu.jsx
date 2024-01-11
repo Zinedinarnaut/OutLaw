@@ -44,7 +44,7 @@ export default function NavlinkDropMenu() {
                                             key={links.link}
                                             href={links.link}
                                             className={`text-md block py-2 px-3 hover:bg-gray-300 dark:hover:bg-zinc-500 rounded-[3px] ${
-                                                router.pathname == links.link
+                                                router.pathname === links.link
                                                     ? 'font-bold underline underline-offset-[6px]'
                                                     : 'font-normal'
                                             } ${links.title === '' ? 'hidden' : ''}`}

@@ -21,7 +21,7 @@ const nextConfig = {
         hostname: 'media.valorant-api.com',
       }
     ],
-  },
+  }
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;

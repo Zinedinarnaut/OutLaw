@@ -12,7 +12,17 @@ const Header = () => {
   return (
     <header className="fixed w-full pq2 z-50 dark:bg-[rgba(17, 17, 17,0.29)] bg-[#171717] backdrop-blur-lg header">
       <div className="mx-auto max-w-4xl">
-        <nav className="flex items-center gap-3 text-base m-3">
+        <nav className="flex items-center gap-2 text-base m-3">
+          <div className="w-[40px] sm:w-[30px] relative">
+            <Image
+                quality={100}
+                src={`/valorant.png`}
+                alt="pfp"
+                width={40}
+                height={10}
+                className="w-auto rounded-full"
+            />
+          </div>
           <Link href="/" className="group">
             <h2 className=" font-bold text-xl flex tracking-tighter items-center notranslate">
               OutLaw

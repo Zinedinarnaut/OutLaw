@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SiteTransitions from "../components/SiteTransitions";
+
 const HomePage = () => {
     const commonStyles = {
         box: {
@@ -112,6 +114,7 @@ const HomePage = () => {
                     </p>
                 </div>
             </section>
+            <SiteTransitions />
         </main>
     );
 };
