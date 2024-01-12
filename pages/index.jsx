@@ -1,5 +1,4 @@
 import React from 'react';
-
 import SiteTransitions from "../components/SiteTransitions";
 
 const HomePage = () => {
