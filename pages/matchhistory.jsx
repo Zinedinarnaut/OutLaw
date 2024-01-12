@@ -48,9 +48,10 @@ const Matchhistory = () => {
                         required
                     />
                 </label>
-                <button type="submit">Search</button>
             </form>
-
+            <div className="button-borders">
+                <button type="submit" className="primary-button">Search</button>
+            </div>
             {matchHistory && (
                 <div className="match-history">
                     {matchHistory.data.slice(0, displayedMatches).map((match, index) => (
@@ -210,16 +211,7 @@ const Matchhistory = () => {
                 border: 1px solid #333;
                 border-radius: 4px;
               }
-
-              button {
-                background-color: var(--card-background-light);
-                padding: 10px;
-                border: 1px solid var(--primary-color);
-                border-radius: 8px;
-                cursor: pointer;
-                margin-top: 10px;
-              }
-
+              
               .match-history {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);

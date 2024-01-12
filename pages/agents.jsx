@@ -25,18 +25,18 @@ const AgentsPage = () => {
     const filteredAgents = agents.filter((agent) => agent.role?.displayName === selectedRole);
 
     const handleRoleChange = (role) => {
-        setSelectedRole(role);
+        setSelectedRole(role || ''); // Ensure a default value if role is null
     };
 
     return (
         <div className="container">
             <h1>Agents</h1>
-            <div className="roleSelector">
+            <div className="roleSelector button-borders">
                 {uniqueRoles.map((role, index) => (
                     <button
                         key={index}
                         onClick={() => handleRoleChange(role)}
-                        className={role === selectedRole ? 'selected' : ''}
+                        className={role === selectedRole ? 'primary-button' : 'primary-button'}
                     >
                         {role || 'No Role'}
                     </button>
@@ -45,27 +45,37 @@ const AgentsPage = () => {
             <ul className="agentsList">
                 {filteredAgents.map((agent) => (
                     <li key={agent.uuid} className="agent">
-                        <h3>{agent.displayName}</h3>
+                        <h3 className="text-white">{agent.displayName}</h3>
                         <div className="imageContainer">
-                            <Image
-                                src={agent.displayIcon}
-                                alt={agent.displayName}
-                                width={200}
-                                height={200}
-                                layout="responsive"
-                            />
+                            {agent.displayIcon && (
+                                <Image
+                                    src={agent.displayIcon}
+                                    alt={agent.displayName}
+                                    width={100} // Adjusted width to make the image smaller
+                                    height={100} // Adjusted height to make the image smaller
+                                    layout="responsive"
+                                    objectFit="cover"
+                                    quality={100}
+                                    style={{ borderRadius: '8px' }}
+                                />
+                            )}
                         </div>
                         <p>{agent.description}</p>
                         <div className="abilities">
                             {agent.abilities.map((ability, index) => (
                                 <div key={index} className="ability">
-                                    <Image
-                                        src={ability.displayIcon}
-                                        alt={ability.displayName}
-                                        width={50}
-                                        height={50}
-                                        layout="fixed"
-                                    />
+                                    {ability.displayIcon && (
+                                        <Image
+                                            src={ability.displayIcon}
+                                            alt={ability.displayName}
+                                            width={30} // Adjusted width to make the image smaller
+                                            height={30} // Adjusted height to make the image smaller
+                                            layout="fixed"
+                                            quality={100}
+                                            objectFit="cover"
+                                            style={{ borderRadius: '8px' }}
+                                        />
+                                    )}
                                     <p>{ability.displayName}</p>
                                 </div>
                             ))}

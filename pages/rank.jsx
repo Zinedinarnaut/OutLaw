@@ -58,8 +58,9 @@ const RankPage = () => {
                     {/* Add more regions if needed */}
                 </select>
             </div>
-
-            <button onClick={handleSearch} style={styles.button}>Search</button>
+<div className="button-borders">
+    <button onClick={handleSearch} className="primary-button">Search</button>
+</div>
 
             {rankData && (
                 <div style={styles.rankContainer}>

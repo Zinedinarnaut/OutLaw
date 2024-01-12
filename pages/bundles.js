@@ -22,7 +22,6 @@ const BundlesPage = ({ bundles }) => {
                             />
                         </div>
                         <h2>Name: {bundle.displayName}</h2>
-                        <break />
                         <p>Description: {bundle.description}</p>
                     </div>
                 ))}

@@ -23,7 +23,6 @@ const WeaponsPage = ({ weapons }) => {
                                 <p>Reload Time (Seconds): {weapon.weaponStats.reloadTimeSeconds}</p>
                                 <p>First Bullet Accuracy: {weapon.weaponStats.firstBulletAccuracy}</p>
                                 <p>Shotgun Pellet Count: {weapon.weaponStats.shotgunPelletCount}</p>
-                                <p>Wall Penetration: {weapon.weaponStats.wallPenetration}</p>
                                 <p>Alt Fire Type: {weapon.weaponStats.altFireType}</p>
 
                                 {/* More stats can be added here */}
@@ -36,6 +35,7 @@ const WeaponsPage = ({ weapons }) => {
                                 alt={weapon.displayName}
                                 width={300}
                                 height={200}
+                                quality={100}
                             />
                         </div>
                     </div>
