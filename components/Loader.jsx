@@ -29,8 +29,10 @@ const Loader = ({ onComplete }) => {
             }}
         >
             {isLoading ? (
-                // Your spinner image (replace 'loader.png' with your actual image)
-                <Image src="/loader.png" alt="Loader" width={100} quality={100} height={50} />
+                <div style={{ animation: 'rotation 1s infinite linear' }}>
+                    {/* Your spinner image (replace 'loader.png' with your actual image) */}
+                    <Image src="/loader.png" alt="Loader" width={100} quality={100} height={50} />
+                </div>
             ) : null}
         </div>
     );
