@@ -20,4 +20,12 @@ export const NavLinks = [
     title: "Match History",
     link: "/matchhistory",
   },
+  {
+    title: "Weapons",
+    link: "/weapons",
+  },
+  {
+    title: "Bundles",
+    link: "/bundles",
+  },
 ];
