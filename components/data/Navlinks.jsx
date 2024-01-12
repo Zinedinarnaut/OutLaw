@@ -5,7 +5,7 @@ export const NavLinks = [
     link: "/",
   },
   {
-    title: "Valorant Status",
+    title: "ValorantStatus",
     link: "/incidents",
   },
   {
@@ -13,11 +13,11 @@ export const NavLinks = [
     link: "/patchnotes",
   },
   {
-    title: "Rank Search",
+    title: "RankSearch",
     link: "/rank",
   },
   {
-    title: "Match History",
+    title: "MatchHistory",
     link: "/matchhistory",
   },
   {
@@ -25,7 +25,15 @@ export const NavLinks = [
     link: "/weapons",
   },
   {
-    title: "Bundles",
-    link: "/bundles",
+    title: "Agents",
+    link: "/agents",
+  },
+  {
+    title: "Buddies",
+    link: "/buddies",
+  },
+  {
+    title: "Stats",
+    link: "/stats",
   },
 ];

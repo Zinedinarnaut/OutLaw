@@ -23,24 +23,6 @@ export default function Footer() {
           </div>
           Riot Games
           <div className="flex-1"></div></div>
-        <div className="text-md gap-5">
-            <Link
-                alt="Link of araxyso's github home page (open in new tab)"
-                className=" text-gray-500 hover:text-gray-900 dark:hover:text-white transition items-center inline-flex"
-                target="_blank"
-                href="/agents"
-            >
-                &thinsp;Agents,
-            </Link>
-            <Link
-                alt="Link of araxyso's github home page (open in new tab)"
-                className=" text-gray-500 hover:text-gray-900 gap-3 dark:hover:text-white transition items-center inline-flex"
-                target="_blank"
-                href="/buddies"
-            >
-                &thinsp;Buddies,
-            </Link>
-        </div>
     </footer>
   );
 }

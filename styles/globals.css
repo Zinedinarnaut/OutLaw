@@ -522,3 +522,22 @@ h1 {
 .shape {
   fill: #0E1822;
 }
+
+
+.maps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.map-card {
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.map-card:hover {
+  transform: scale(1.05);
+}
