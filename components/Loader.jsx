@@ -25,7 +25,7 @@ const Loader = ({ onComplete }) => {
                 alignItems: 'center',
                 height: '100vh',
                 visibility: isLoading ? 'visible' : 'hidden',
-                backgroundColor: '#1E1E1E', // Set your desired dark background color
+                backgroundColor: '#111111', // Set your desired dark background color
             }}
         >
             {isLoading ? (
